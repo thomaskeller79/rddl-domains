@@ -73,7 +73,7 @@ instance wildlife-preserve_inst_mdp__05 {
         ~was-defended(@a1,@1);
     };
 
-    horizon = 60;
+    horizon = 30;
 
     discount = 1.0;
 }

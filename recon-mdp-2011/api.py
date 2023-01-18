@@ -1,0 +1,14 @@
+domains = [{
+    'description': '(mdp11) Recon:\n\nsubmitted by Tom Walsh.\n\nDescription: In the reconnaissance MDP, there is a 2d grid with an agent, a base, some hazard squares, and objects in different locations. The agent is equipped with 3 tools, one for detecting water, one for detecting life, and one for taking a picture.  The agent\'s movements are deterministic but the probability of getting a good reading from the life and water sensors are stochastic.  Plus, running into a hazard OR being an adjacent square to one, has a probability of damaging each sensor, which causes their false negative rate to increase dramatically.  If the agent returns to the base it can repair each tool individually. \n In the MDP version, when tools report a negative result, they contaminate the object they were used on.  With the water tool, one negative result means water will never be detected on that object, and 2 negative results from the life detector similarly contaminates an object. Hence, there is a strong reason not to use damaged tools.  Positive reward is given for taking pictures of objects where life was detected and negative reward is given for pictures where life has not been detected.\n The major planning decisions in this domain are:\n 1) Choosing which objects to try the tools on.\n 2) Whether or not to repair the tools. \n 3) Whether or not to risk damage to the tools by moving through hazards. \n This domain contains elements of the Rock Sample and Mars Rover domains: \n* Mars Rover reference: \n John L. Bresina, Richard Dearden, Nicolas Meuleau, Sailesh Ramkrishnan, David E. Smith, Richard Washington: Planning under Continuous Time and Resource Uncertainty: A Challenge for AI. UAI 2002: 77-84. http://ti.arc.nasa.gov/static/asanicms/pub-archive/archive/2002-0339.pdf\n * Rock Sample reference: \n Trey Smith and Reid G. Simmons: Heuristic Search Value Iteration for POMDPs.  UAI 2004.  http://www.cs.cmu.edu/~trey/papers/smith04_hsvi.pdf',
+    'ipc': '2011',
+    'name': 'recon',
+    'problems': [('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__1.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__2.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__3.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__4.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__5.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__6.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__7.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__8.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__9.rddl'),
+                 ('recon-mdp-2011/recon_mdp.rddl', 'recon-mdp-2011/recon_inst_mdp__10.rddl')]}]

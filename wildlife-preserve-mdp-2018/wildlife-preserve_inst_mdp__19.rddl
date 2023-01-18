@@ -470,7 +470,7 @@ instance wildlife-preserve_inst_mdp__19 {
         ~was-defended(@a1,@1);
     };
 
-    horizon = 80;
+    horizon = 40;
 
     discount = 1.0;
 }
